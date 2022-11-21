@@ -5,8 +5,53 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Kalkulačka</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-   
+   <div id="container">
+      <div class="kalkulacka__area">
+         <div class="kalkulacka__output">6</div>
+         <div class="kalkulacka__tlacitka">
+            <div class="radek">
+               <button id="procento" class="tlaciko">%</button>
+               <button id="ce" class="tlaciko">CE</button>
+               <button id="c" class="tlaciko">C</button>
+               <button id="smazat" class="tlaciko"><i class='bx bx-checkbox-minus'></i></button>
+            </div>
+            <div class="radek">
+               <button id="jednanaxtou" class="tlaciko">1/x</button>
+               <button id="nadruhou" class="tlaciko">x²</button>
+               <button id="odmocninadvou" class="tlaciko">√2</button>
+               <button id="deleno" class="tlaciko">÷</button>
+            </div>
+            <div class="radek">
+               <button id="sedm" class="svetla tlaciko">7</button>
+               <button id="osm" class="svetla tlaciko ">8</button>
+               <button id="devet" class="svetla tlaciko ">9</button>
+               <button id="krat" class="tlaciko ">×</button>
+            </div>
+            <div class="radek">
+               <button id="ctyri" class="svetla tlaciko ">4</button>
+               <button id="pet" class="svetla tlaciko ">5</button>
+               <button id="sest" class="svetla tlaciko ">6</button>
+               <button id="minus" class="tlaciko ">-</button>
+            </div>
+            <div class="radek">
+               <button id="jedna" class="svetla tlaciko ">1</button>
+               <button id="dva" class="svetla tlaciko ">2</button>
+               <button id="tri" class="svetla tlaciko ">3</button>
+               <button id="plus" class="tlaciko ">+</button>
+            </div>
+            <div class="radek">
+               <button id="plusminus" class="svetla tlaciko ">+/-</button>
+               <button id="nula" class="svetla tlaciko ">0</button>
+               <button id="desetinnacarka" class="svetla tlaciko ">,</button>
+               <button id="rovnase" class="tlaciko ">=</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/script.js"></script>
 </body>
 </html>
