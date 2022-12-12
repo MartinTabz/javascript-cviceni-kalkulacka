@@ -1,44 +1,66 @@
 :root {
-   --hlavni: #fff;
-}
+   --text: #f1f1f1;
+} 
 * {
    box-sizing: border-box;
-   padding: 0;
    margin: 0;
+   padding: 0;
+   color: white;
+}
+#kalkulacka {
+   width: 496px;
+   margin: 0 auto;
+   margin-top: 150px;
+}
+#displej {
+   height:100px;
+   width: 495px;
+}
+#tlacitka {
+   display: grid;
+   width: 495px;
+   left: 50%;
+   position: relative;
+   transform: translate(-50%);
+   grid-template-columns: repeat(4, 120px);
+   gap: 5px;
+}
+#tlacitka input {
+   width: 120px;
+   height: 70px;
+   border: 0;
+   cursor: pointer;
+   transition: .35s ease-in-out;
+}
+#tlacitka input:hover {
+   background-color: black;
 }
 #container {
-   max-width: 750px;
-   margin: 0 auto;
-}
-.tlaciko {
-   width: 120px;
-   height: 60px;
-   color: #000000;
-   cursor: pointer;
-   margin: 5px;
-   border: 0;
-   font-size: 22px;
-   background-color: rgb(215, 215, 215);
-}
-.kalkulacka__area {
    position: relative;
-   width: 532px;
    margin: 0 auto;
-   top: 50%;
-   transform: translateY(40%);
-   background-color: rgb(241, 241, 241);
+   width: 90%;
+   max-width: 1500px;
 }
-.kalkulacka__output {
-   margin: 5px;
-   width: 522px;
-   height: 70px;
-   padding-right: 10px;
+.dark {
+   background-color: rgb(21, 21, 21);
+}
+.bright {
+   background-color: rgb(43, 43, 43);
+}
+.bg {
+   background-color: rgb(60, 60, 60);
+}
+.other {
+   background-color: rgb(133, 27, 27);
+}
+#display {
+   width: 100%;
+   position: relative;
+   height: 100px;
+   background-color: transparent;
+   color: white;
+   font-size: 30px;
+   padding: 0 35px;
    text-align: right;
-   font-size: 65px;
-}
-.rovnase {
-   background-color: rgb(127, 170, 255);
-}
-.svetla {
-   background-color: rgb(229, 229, 229);
+   letter-spacing: 5px;
 }

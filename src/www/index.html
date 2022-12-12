@@ -1,57 +1,51 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Kalkulačka</title>
-   <link rel="stylesheet" href="./css/style.css">
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka</title>
+    <script src="./lib/jquery-3.6.1.min.js"></script>
+    <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <div id="container">
-      <div class="kalkulacka__area">
-         <div class="kalkulacka__output">6</div>
-         <div class="kalkulacka__tlacitka">
-            <div class="radek">
-               <button id="procento" class="tlaciko">%</button>
-               <button id="ce" class="tlaciko">CE</button>
-               <button id="c" class="tlaciko">C</button>
-               <button id="smazat" class="tlaciko"><i class='bx bx-checkbox-minus'></i></button>
-            </div>
-            <div class="radek">
-               <button id="jednanaxtou" class="tlaciko">1/x</button>
-               <button id="nadruhou" class="tlaciko">x²</button>
-               <button id="odmocninadvou" class="tlaciko">√2</button>
-               <button id="deleno" class="tlaciko">÷</button>
-            </div>
-            <div class="radek">
-               <button id="sedm" class="svetla tlaciko">7</button>
-               <button id="osm" class="svetla tlaciko ">8</button>
-               <button id="devet" class="svetla tlaciko ">9</button>
-               <button id="krat" class="tlaciko ">×</button>
-            </div>
-            <div class="radek">
-               <button id="ctyri" class="svetla tlaciko ">4</button>
-               <button id="pet" class="svetla tlaciko ">5</button>
-               <button id="sest" class="svetla tlaciko ">6</button>
-               <button id="minus" class="tlaciko ">-</button>
-            </div>
-            <div class="radek">
-               <button id="jedna" class="svetla tlaciko ">1</button>
-               <button id="dva" class="svetla tlaciko ">2</button>
-               <button id="tri" class="svetla tlaciko ">3</button>
-               <button id="plus" class="tlaciko ">+</button>
-            </div>
-            <div class="radek">
-               <button id="plusminus" class="svetla tlaciko ">+/-</button>
-               <button id="nula" class="svetla tlaciko ">0</button>
-               <button id="desetinnacarka" class="svetla tlaciko ">,</button>
-               <button id="rovnase" class="tlaciko ">=</button>
-            </div>
-         </div>
-      </div>
-   </div>
-   <script src="./js/script.js"></script>
+    <div id="container">
+        <div class="bg" id="kalkulacka">
+            <form name="forms">
+                <div class="bg" id="displej">
+                    <input type="text" id="display" name="display" disabled>
+                </div>
+                <div id="tlacitka">
+                    <input class="bright" type="button" id="procento" value="%" />
+                    <input class="bright" type="button" id="ce" value="CE" />
+                    <input class="bright" type="button" id="c" value="C" />
+                    <input class="bright" type="button" id="del" value="<" />
+                    <input class="bright" type="button" id="jednalomenox" value="1/x" />
+                    <input class="bright" type="button" id="nadruhou" value="x^2" />
+                    <input class="bright" type="button" id="odmocninadvou" value="2√x" />
+                    <input class="bright" type="button" id="deleno" value="÷" />
+                    <input class="dark" type="button" id="sedm" value="7" />
+                    <input class="dark" type="button" id="osm" value="8" />
+                    <input class="dark" type="button" id="devet" value="9" />
+                    <input class="bright" type="button" id="krat" value="x" />
+                    <input class="dark" type="button" id="ctyri" value="4" />
+                    <input class="dark" type="button" id="pet" value="5" />
+                    <input class="dark" type="button" id="sest" value="6" />
+                    <input class="bright" type="button" id="minus" value="-" />
+                    <input class="dark" type="button" id="jedna" value="1" />
+                    <input class="dark" type="button" id="dva" value="2" />
+                    <input class="dark" type="button" id="tri" value="3" />
+                    <input class="bright" type="button" id="plus" value="+" />
+                    <input class="dark" type="button" id="pluslomenominus" value="+/-" />
+                    <input class="dark" type="button" id="nula" value="0" />
+                    <input class="dark" type="button" id="carka" value="," />
+                    <input class="other" type="button" id="rovna" value="=" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
 </body>
 </html>
